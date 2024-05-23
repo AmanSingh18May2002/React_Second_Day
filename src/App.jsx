@@ -4,6 +4,7 @@ import "./App.css";
 import dhoni from "./assets/Ms Dhoni.webp";
 import hrithik from "./assets/Hrithik-Roshan.webp";
 import thor from "./assets/Thor.jpg"
+import Child from './Components/Props/Props_children/Child';
 
 const App = () => {
   let actor1={
@@ -33,12 +34,18 @@ const App = () => {
 
   return (
     <div>
-     
       <div className='flex items-center justify-center gap-[3rem]'>
         <Card user={actor1}></Card>
         <Card user={actor2}></Card>
         <Card user={actor3}></Card>
       </div>
+      <div>      
+          <Child user="props">
+              <h1>Learing React</h1>
+              <h2>Learning Props children</h2>  
+              <h3>Thankyou</h3>
+          </Child>
+    </div>
     </div>
   )
 }

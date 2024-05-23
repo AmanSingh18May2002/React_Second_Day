@@ -14,8 +14,6 @@ const Card = (props) => {
             className='rounded-md h-[100%] w-[100%] object-cover object-top'/>
           </div>
           
-
-        
           <h2 className='text-[1.5rem] font-semibold my-2'>{props.user.actorName}</h2>
           <p className='text-justify px-5 mb-4 text-[1rem]'>
            {props.user.about}
